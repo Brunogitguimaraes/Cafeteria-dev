@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+html{
+    scroll-behavior: smooth; /* Ativa uma rolagem suave ao clicar em links de âncora */
+}
+
+body{
+    overflow-x: hidden; /* Evita a rolagem horizontal */
+}
+
+header{
+    background-image: linear-gradient(to right, #4a1e1b, #4a1e1be6);
+    color: white;
+    padding: 0 2rem;
+    height: 4.8rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    
+    
+    
+}
+
+.container-header{
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-cafe{
+    display: flex;
+    margin: 0 10px;
+}
+
+.logo-cafe a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    letter-spacing: 0.05em;
+    padding: 0 20px 5px 0;
+    font-family: "Pacifico", cursive;
+}
+
+.logo-cafe img{
+    height: 50px;
+    margin-right: 8px;
+}
+
+.div-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 5px;
+}
+
+.menu-link{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none; /* remove os marcadores da lista desordenada */
+    text-decoration: none;
+    color: #ffffffb3;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    
+}
+
+.menu-link:hover{
+    color: white;
+    transition-duration: 200ms;
+    cursor: pointer;
+}
+
+.icon-coffe-button{
+   background-color: #784538;
+   border: none;
+   border-radius: 20px;
+   padding: 5px 1rem;
+   color: white;
+   font-size: 1rem;
+   text-decoration: none;
+   cursor: pointer;
+
+}
+
+.icon-coffe-button:hover{
+    transform: scale(1.05);
+    transition-duration: 200ms;
+    cursor: pointer;
+}
+
+.img-button-link{
+    margin-left: 5px;
+}
+
+main {
+   min-height: 600px;
+   padding: 0 50px;
+   background-color: #270c03;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+}
+
+.container-home {
+   margin: 0 auto;
+   padding: 3rem;
+}
+
+.grid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   align-items: center;
+   text-align: center;
+}
+
+.div-text-home {
+   text-align: start;
+}
+
+.h1-text-home {
+   font-size: 4rem;
+   font-weight: bold;
+}
+
+.span-h1-home {
+   font-family: "Pacifico", cursive;
+   color: #854d3d;
+}
+
+.button-home {
+   background: linear-gradient(to right, #854d3d, #4a1e1b);
+   border: 2px solid #854d3d;
+   padding: 0.5rem 1rem;
+   border-radius: 9999px;
+   color: white;
+   text-align: center;
+   display: inline-block;
+   transition: transform 0.2s ease-in-out;
+
+   cursor: pointer;
+
+   &:hover {
+      transform: scale(1.05);
+   }
+}
+
+.img-home {
+    width: 550px;
+    transform: scale(1.25);
+    animation: balanco 5s linear infinite;
+}
+
+
+@keyframes balanco {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   50% {
+      transform: rotate(15deg);
+   }
+
+   100% {
+      transform: rotate(0deg);
+   }
+}
+
+.section-services {
+   padding: 2.5rem 3rem;
+   margin: 0 auto;
+   min-height: 600px;
+}
+
+.container-services {
+   text-align: center;
+   margin: 0 auto 5rem;
+   padding: 0 3rem;
+}
+
+.tittle-section-services {
+   font-size: 2.25rem;
+   font-weight: bold;
+   font-family: "Pacifico", cursive;
+   color: #2d3748;
+}
+
+.div-card {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 1.25rem;
+   place-items: center;
+}
+
+.service-card {
+   border-radius: 1rem;
+   background-color: white;
+   box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.15);
+   transition: all 0.5s ease;
+   max-width: 300px;
+   position: relative;
+}
+
+.service-card:hover {
+   background-color: #854d3d;
+   color: white;
+}
+
+.div-card-image {
+   height: 122px;
+}
+
+.image-card {
+   max-width: 200px;
+   display: block;
+   margin: 0 auto;
+   transform: translateY(-3.5rem);
+   transition: transform 0.3s ease;
+}
+
+.service-card:hover .image-card {
+   transform: translateY(-3.5rem) scale(1.05) rotate(6deg);
+}
+
+.div-text-services-card {
+   padding: 1rem;
+   text-align: center;
+}
+
+.h1-card-service {
+   font-size: 1.25rem;
+   font-weight: bold;
+   margin-bottom: 0.5rem;
+   text-align: center;
+}
+
+.p-card-service {
+   color: #6b7280;
+   transition: all 0.7s ease;
+   font-size: 0.875rem;
+   line-height: 1.25rem;
+   text-align: center;
+   margin-bottom: 1rem;
+
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 2;
+   line-clamp: 2;
+}
+
+.service-card:hover .p-card-service {
+   color: #ffffff;
+}
+
+
+footer {
+   background-color: #270c03;
+   min-height: 150px;
+   padding: 1rem;
+}
+
+.div-logo-footer {
+   font-size: 2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.p-footer {
+   color: white;
+   margin: 1rem;
+   font-size: 25px;
+   display: flex;
+   justify-content: center;   
+   align-items: center;
+}
+
+.span-footer{
+      color: white;
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: inline-block;
+      font-size: 3rem;
+      font-family: "Pacifico", cursive;
+}
+
+
+
+
+@media screen and (max-width: 770px) {
+    .div-list{
+        display: none;
+    }
+    
+    header{
+        height: auto;
+        padding: 0.5rem 1rem;
+    }
+    
+    .logo-cafe a{
+        font-size: 1.5rem;
+        padding: 0 10px 5px 0;
+    }
+    
+    .logo-cafe img{
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .container-header{
+        flex-direction:column;
+        gap: 0.5rem;
+    }
+    
+    .logo-cafe a{
+        font-size: 1.2rem;
+    }
+    
+    .logo-cafe img{
+        height: 30px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+        padding-top: 5rem;
+    }
+    
+    .img-home {
+        width: 350px;
+        transform: scale(1);
+    }
+
+    .section-services{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      padding: 2rem;
+      gap: 2rem;
+      
+    }
+    .div-logo div-logo-footer{
+      margin-bottom: 50px;
+    }
+    
+    
+   
+}
+
+
