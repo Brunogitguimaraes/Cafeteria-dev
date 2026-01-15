@@ -16,7 +16,7 @@ Aplicação web desenvolvida para simular uma cafeteria digital, onde o usuário
 
 ## 📸 Demonstração
 
-![Preview da aplicação](./assets/cafe-2.png)
+![Preview da aplicação](./assets/servicePage.png)
 
 ---
 
@@ -52,4 +52,5 @@ Se gostou do projeto, não esqueça de deixar uma ⭐ no repositório!
 Esse `README.md` já está pronto para ser colocado no GitHub. Ele usa Markdown, organiza bem as seções e mostra profissionalismo.  
 
 Quer que eu também prepare um **badge estilizado** (como "Feito com ❤️ em HTML/CSS") para deixar o README ainda mais atrativo?
+
 
