@@ -32,7 +32,8 @@ Aplicação web desenvolvida para simular uma cafeteria digital, onde o usuário
    git clone https://github.com/seu-usuario/cafeteria-dev.git
    
 2. Acesse a pasta do projeto:
-cd cafeteria-dev
+    ```bash
+    cd cafeteria-dev
 
 3. Abra o arquivo index.html em seu navegador ou utilize uma extensão como Live Server no VS Code.
 
@@ -47,10 +48,5 @@ cd cafeteria-dev
 <br>
 👨‍💻 AutorDesenvolvido por Bruno da Silva Guimarães
 Se gostou do projeto, não esqueça de deixar uma ⭐ no repositório!
-
-
-Esse `README.md` já está pronto para ser colocado no GitHub. Ele usa Markdown, organiza bem as seções e mostra profissionalismo.  
-
-Quer que eu também prepare um **badge estilizado** (como "Feito com ❤️ em HTML/CSS") para deixar o README ainda mais atrativo?
 
 
